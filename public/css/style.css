@@ -1,0 +1,93 @@
+.form{
+	color: #1f1c1c;
+}
+.nav{
+	background-color:rgba(232, 235, 235, 0.911);
+
+}
+.yellow{
+	color: yellowgreen;
+}
+.green{
+	color: rgb(18, 60, 36);
+}
+.paxadi{
+	background-color: rgb(246, 241, 241);
+}
+
+
+ .bodybg{
+ 	background-image: url(../../img/2.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size:cover;
+ }
+.margin{
+	margin-top: -80px;
+	margin-left: 200px;
+	margin-right: 200px;
+
+}
+
+.blank{
+	margin-top: -100px;
+	padding-left: 160px;
+}
+.aboutt{
+	margin-left: 100px;
+
+}
+@media (max-width: 480px) {
+  .blank{
+	margin-top: -50px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+}
+.left{
+	margin-left: 200px;
+}
+.logo{
+	width: 50;
+	margin: 0;
+}
+
+.menu{
+	margin-left: 200px;
+}
+.text{
+	color: navajowhite;
+}
+.bg{
+	background-color: black;
+	
+}
+.maternity{
+	margin-top: 150px;
+
+}
+.dash{
+background-image: url(../../droid/droid.jpg);
+background-repeat: no-repeat;
+ 	background-size:cover;
+}
+
+.edit{
+	background-image: url(../../droid/edit.jpeg);
+	background-repeat: no-repeat;
+		 background-size:cover;
+	}
+
+.bgg{
+	background-image: url(../droid/1.jpg);
+	background-repeat: no-repeat;
+		 background-size:cover;
+		
+	}
+
+	.back{
+		
+		background: black;
+	}
+.navmargin{
+	margin-left: -500px;
+}

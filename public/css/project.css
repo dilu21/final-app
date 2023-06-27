@@ -1,0 +1,35 @@
+.green{
+	color: rgb(12, 69, 34);
+}
+.aboutt{
+	margin-left: 100px;
+
+}
+.story{
+    margin: auto;
+}
+.back{
+    background-color:rgb(120, 117, 117);
+   
+}
+
+
+.bg{
+   background-color: rgb(16, 36, 16);
+}
+.color{
+    background-color: rgb(143, 146, 144);
+}
+.home{
+    margin-top: 25px;
+   margin-left: 200px;
+}
+.image{
+    background-image:url(../../images/room/bg.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact{
+   margin-left: 315px;
+}
