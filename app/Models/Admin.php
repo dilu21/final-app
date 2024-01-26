@@ -13,8 +13,14 @@ class Admin extends Model
         'title', 'subtitle', 'author', 'image', 'description', 'caption'
     ];
 
+    public function categoryall()
+    {
+        return $this->belongsTo(Category::class, 'categories_id', 'id');
+    }
+
     public function category()
     {
         return $this->hasMany(Category::class, 'id', 'categories_id');
     }
+
 }

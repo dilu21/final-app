@@ -1,5 +1,5 @@
 
-@extends('admin.layout')
+@extends('dashboard.layout')
 
 @section('content')
 
@@ -16,7 +16,7 @@
                     {{$post->caption}}
                   </p>
                   <p>
-                 {{ $post->description }}
+                 {!! $post->description !!}
                   </p>
                   <p>{{ $post->author}}</p>
                 </div>

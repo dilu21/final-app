@@ -1,8 +1,10 @@
-@extends('admin.layout')
+@extends('dashboard.layout')
 
 @section('title', 'create')
 
 @section('content')
+<div class="main-panel">
+     <div class="content-wrapper">
 
 <div class="row dash">
     <div class="col-lg-6 m-auto p-5">
@@ -24,6 +26,8 @@
 
 </div>
 
+</div>
+</div>
 </div>
 
 

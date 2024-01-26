@@ -1,11 +1,13 @@
-@extends('admin.layout')
+@extends('dashboard.layout')
 
 @section('title', 'create')
 
 @section('content')
+<div class="main-panel">
+     <div class="content-wrapper">
 
 <div class="row ">
-    <div class="col-lg-6 m-auto p-5">
+    <div class="col-lg-8 m-auto p-5 grid-margin">
 <form method="POST" action="{{ route('admin.store')}}" enctype="multipart/form-data">
     @csrf
 
@@ -48,7 +50,7 @@
     </div>
     <div class="mb-3">
         <label for="name">Description:</label>
-        <textarea  cols="30" rows="30" class="form-control" name="description" value="{{ old('description') }}"></textarea>
+        <textarea  cols="30" id="tiny" rows="30" class="form-control" name="description"  value="{{ old('description') }}"></textarea>
         @error('description')
     <div class="error">
         {{ $message }}
@@ -88,6 +90,9 @@
 
 </div>
 
+
+</div>
+</div>
 
 
 @endsection

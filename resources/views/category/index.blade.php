@@ -1,6 +1,9 @@
-@extends('admin.layout')
+@extends('dashboard.layout')
 
 @section('content')
+
+<div class="main-panel">
+     <div class="content-wrapper">
 <div class="col-lg-12">
 <div class="card">
                 <div class="card-body">
@@ -15,7 +18,7 @@
                         <tr>
                           <th> SN</th>
                           <th>Title </th>
-                          <th> Author</th>
+                          <th> Action</th>
                           <th> Action</th>
                         </tr>
                       </thead>
@@ -56,6 +59,10 @@
                 </div>
               </div>
               </div>
+
+</div>
+</div>
+
               @endsection
 
 

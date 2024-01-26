@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\FrontpageController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +32,9 @@ Route::get('/navbar', function () {
     return view('admin.nav');
 });
 
-Route::get('/', function () {
-    return view('admin.dashboard');
-})->name('dash');
+Route::get('/dashboard', function () {
+    return view('dashboard.dash');
+})->name('dashboard');
 
 Route::get('/sidebar', function () {
     return view('admin.sidebar');
@@ -55,7 +57,7 @@ Route::resource('admin', AdminController::class);
 
 Route::resource('category', CategoryController::class);
 
-
+// Route::resource('contact', ContactController::class);
 
 
 Route::get('/sidebar', function () {
@@ -69,3 +71,22 @@ Route::get('/navbar', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.dash');
 });
+
+
+Route::get('/', [FrontpageController::class, 'home'])->name('dash');
+Route::get('/blog/{id}', [FrontpageController::class, 'show'])->name('view');
+Route::get('/blog-category/{id}', [FrontpageController::class, 'blogcategory'])->name('bcat');
+
+
+
+Route::get('/front', function () {
+    return view('frontpage.nav');
+});
+
+Route::get('/foot', function () {
+    return view('frontpage.footer');
+})->name('footer');
+
+Route::get('/blog', [FrontpageController::class, 'blog'])->name('blogpage');
+
+

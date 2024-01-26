@@ -19,16 +19,22 @@
   <link rel="stylesheet" href="{{asset ('dash/css/vertical-layout-light/style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('dash/images/favicon.png')}}" />
+
+  @vite(['resources/sass/app.scss', 'resources/js/app.js'])
   <title> @yield('title') </title>
          </head>
          <body>
           <div class="container-scroller">
         @include('dashboard.navbar')
+        @include('admin.layout')
           <div class="container-fluid page-body-wrapper">
-
-          
+       @include('dashboard.sidebar')
           @yield('content')
-  <body>
+
+</div>
+</div>
+
+
   <!-- plugins:js -->
   <script src="{{asset ('dash/vendors/js/vendor.bundle.base.js')}}"></script>
   <!-- endinject -->

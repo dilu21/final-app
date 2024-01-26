@@ -1,14 +1,17 @@
-@extends('admin.layout')
+@extends('dashboard.layout')
 
 @section('title', 'create')
 
 @section('content')
 
+<div class="main-panel">
+     <div class="content-wrapper">
+
 <div class="row">
-    <div class="col-lg-6 m-auto p-5">
+    <div class="col-lg-8 m-auto p-5">
 <form method="post" action="{{ route('admin.update', $post->id)}}" enctype="multipart/form-data">
     @csrf
-    <input type="hidden" name="_method" value="PUT">
+
 
     <div class="category">
                       <label for="exampleFormControlSelect3">Category</label>
@@ -34,7 +37,7 @@
     </div>
     <div class="mb-3">
         <label for="name">Description:</label>
-        <textarea cols="30" rows="30" class="form-control" name="description" value="">{{ ($post->description) }}</textarea>
+        <textarea cols="30" id="tiny" rows="30" class="form-control" name="description" value="">{{ ($post->description) }}</textarea>
     </div>
     <div class="mb-3">
         <label for="name">Author:</label>
@@ -54,6 +57,9 @@
     <button class="register" type="submit" >Submit </button>
 
 </form>
+
+</div>
+</div>
 
 </div>
 </div>
